@@ -13,8 +13,13 @@ https://course-reg-system.netlify.app
 ### This project is split into two repositories:
 
  🔹 Backend (Spring Boot): course-backend
+```bash
+https://github.com/seshathri044/course-backend
+```
  🔹 Frontend (Standalone HTML/JS): course-frontend
-
+```bash
+https://github.com/seshathri044/course-frontend
+```
 ## 🚀 Features
 
 - ✅ REST API for managing courses and student enrollments
@@ -23,6 +28,11 @@ https://course-reg-system.netlify.app
 - ✅ Responsive design (works on desktop & mobile)
 - ✅ Easy integration between frontend ↔ backend ↔ DataBase
 - ✅ Deployed in Netify
+- ✅ MySQL database integration with Hibernate ORM
+- ✅ Service & Repository layer abstraction
+- ✅ Centralized configuration with application.properties
+- ✅ Tested with Postman + verified in MySQL Workbench
+
 
 ## 🛠️ Tech Stack
 **Backend (course-backend)**
@@ -92,7 +102,7 @@ enrolled.html → View enrolled students
 ```
 🔄 Repo Navigation
 
-- Go to Backend Repo 👉 course-backend
+- Go to Backend Repo 👉 course-backend - https://github.com/seshathri044/course-backend
 
 
 ## 🤝 Contributing
