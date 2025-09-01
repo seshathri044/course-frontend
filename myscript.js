@@ -1,5 +1,5 @@
 function showCourses() {
-    fetch("http://localhost:8080/courses")
+    fetch("https://course-backend-1-53zi.onrender.com/courses")
     .then(response => response.json())
     .then(courses => {
         const dataTable = document.getElementById("coursetable");
@@ -19,7 +19,7 @@ function showCourses() {
 }
 
 function showEnrolledStudents() {
-    fetch("http://localhost:8080/courses/enrolled")
+    fetch("https://course-backend-1-53zi.onrender.com/courses/enrolled")
     .then(response => response.json())
     .then(students => {
         const dataTable = document.getElementById("enrolledtable");
