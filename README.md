@@ -1,118 +1,114 @@
-# course-frontend
-A full-stack Course Registration System built with Spring Boot (Backend),MySQL(DataBase) and a lightweight standalone frontend (HTML, CSS, JavaScript).
-### Note
-- The Backend is not deployed Yet so it may rise Error but the UI is completely deployed using Netify
-```bash
-https://course-reg-system.netlify.app
-```
-### The system allows users to:
-- 🔎 View available courses
-- 📝 Register for a course
-- 👨‍🎓 View enrolled students
+# 🎨 Course Registration System – Frontend  
 
-### This project is split into two repositories:
+A responsive **frontend web application** for the Course Registration System, built with **HTML, CSS, Bootstrap, and JavaScript**.  
+This frontend connects seamlessly to the backend API (**Spring Boot + MySQL**).  
 
- 🔹 Backend (Spring Boot): course-backend
-```bash
-https://github.com/seshathri044/course-backend
-```
- 🔹 Frontend (Standalone HTML/JS): course-frontend
-```bash
-https://github.com/seshathri044/course-frontend
-```
-## 🚀 Features
+🔗 **Live Demo**: [Course Registration System](https://course-register-system.netlify.app)  
 
-- ✅ REST API for managing courses and student enrollments
-- ✅ Standalone frontend (no build tools, no frameworks required)
-- ✅ Clean & professional UI 
-- ✅ Responsive design (works on desktop & mobile)
-- ✅ Easy integration between frontend ↔ backend ↔ DataBase
-- ✅ Deployed in Netify
-- ✅ MySQL database integration with Hibernate ORM
-- ✅ Service & Repository layer abstraction
-- ✅ Centralized configuration with application.properties
-- ✅ Tested with Postman + verified in MySQL Workbench
+---
 
+## 🚀 Deployment Architecture  
 
-## 🛠️ Tech Stack
-**Backend (course-backend)**
-- Java 17+
-- Spring Boot
-- Spring Data JPA / Hibernate
-- MySQL 
-- Maven
+- **Frontend (HTML/CSS/JS/Bootstrap)** → Deployed on **Netlify**  
+- **Backend API (Spring Boot + JPA + MySQL)** → Deployed on **Render**  
+- **Database (MySQL)** → Hosted on **Railway**  
 
-**Frontend (course-frontend)**
-- HTML
-- CSS
-- JavaScript (Fetch API for REST calls)
+---
 
-📂 Project Structure
-```bash
-course-backend/        <-- REST API server (Spring Boot)
-course-frontend/       <-- Standalone frontend (HTML/JS)
+## 🏗️ System Architecture  
+
+```mermaid
+flowchart TD
+    A["Frontend - Netlify\n(HTML/CSS/JS/Bootstrap)"] -->|REST API Calls| B["Backend - Render\n(Spring Boot, JPA)"]
+    B -->|SQL Queries| C["Database - Railway\n(MySQL)"]
+
 ```
 
+## ✨ Features  
 
-📸 Screenshots
-**Homepage**
-<img width="1920" height="1080" alt="CR1" src="https://github.com/user-attachments/assets/70d53708-f4ae-4f73-82e0-da4dbdc50282" />
-**Registeration Page**
-<img width="1920" height="1080" alt="CR2" src="https://github.com/user-attachments/assets/76c30e12-fcbc-4520-bef0-e233362c4855" />
+📌 Clean & modern **Bootstrap-based UI**  
 
-**Available Courses**
+📋 View all available courses in a **responsive layout**  
 
-**Enrolled Students**
+📝 Register students into courses via backend API  
 
+👨‍🎓 View list of **enrolled students** (fetched dynamically)  
+
+🌍 Fully responsive design (desktop + mobile friendly)  
+
+⚡ Deployed on **Netlify** for instant global access  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript  
+- **Deployment:** Netlify  
+- **API Integration:** REST API from Backend Repo  
+
+---
+
+## 📸 Screenshots  
+
+**Landing Page**  
+<img width="1920" height="1080" alt="FE1" src="https://github.com/user-attachments/assets/xxxxxxxx" />  
+
+**Course List**  
+<img width="1920" height="1080" alt="FE2" src="https://github.com/user-attachments/assets/yyyyyyyy" />  
+
+**Registration Form**  
+<img width="1920" height="1080" alt="FE3" src="https://github.com/user-attachments/assets/zzzzzzzz" />  
+
+---
+
+## 📂 Project Structure  
+
+```bash
+course-frontend/
+│── index.html      
+│── availcourses.html       
+│── script.js       # Frontend logic & API calls
+│── enrolled.html
+│── register.html
+│── README.md
+```
 ## ⚡ Setup Instructions
-**1️⃣ Clone Both Repositories**
-**Backend**
-```bash
-git clone https://github.com/seshathri044/course-backend.git
-```
-**Frontend**
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/seshathri044/course-frontend.git
+cd course-frontend
 ```
-**2️⃣ Run the Backend**
-cd course-backend
-mvn spring-boot:run
-Backend will start at:
-👉 http://localhost:8080
+### 2️⃣ Run locally
+Just open index.html in your browser, or use a local server:
 
-## API Endpoints:
+### 3️⃣ Deployment (Netlify)
+- Login to Netlify
+- Connect GitHub repo & select course-frontend
+- Netlify auto-deploys on every push
 
-- GET /courses → List available courses
-- POST /courses/register → Register a student
-- GET /courses/enrolled → List enrolled students
+## 🔗 API Integration  
 
-3️⃣ Run the Frontend
+This frontend consumes APIs from the **backend repo** 👉 [course-backend](https://github.com/seshathri044/course-backend)  
 
-Simply open the frontend files in your browser:
-- cd course-frontend
-- Open index.html in browser
+| Action           | API Used                 |
+|------------------|--------------------------|
+| List Courses     | GET `/courses`           |
+| Register Student | POST `/courses/register` |
+| View Enrolled    | GET `/courses/enrolled`  |
 
+### 🔄 Repo Navigation
 
-### Frontend Pages:
-```bash
-index.html → Homepage
-register.html → Register a course
-availcourses.html → View available courses
-enrolled.html → View enrolled students
-```
-🔄 Repo Navigation
+Frontend Repo 👉 [course-frontend](https://github.com/seshathri044/course-frontend)
 
-- Go to Backend Repo 👉 course-backend - https://github.com/seshathri044/course-backend
+Backend Repo 👉 [course-backend](https://github.com/seshathri044/course-backend)
 
-
-## 🤝 Contributing
-Contributions are welcome! Please follow these steps:
+### 🤝 Contributing
+- Contributions are welcome!
 - Fork the repo
-- Create your feature branch (git checkout -b feature/awesome-feature)
-- Commit your changes (git commit -m 'Add awesome feature')
-- Push to the branch (git push origin feature/awesome-feature)
+- Create your feature branch: git checkout -b feature/awesome-feature
+- Commit your changes: git commit -m 'Add awesome feature'
+- Push the branch: git push origin feature/awesome-feature
 - Open a Pull Request
 
-## 📜 License
-This project is licensed under the MIT License – see the LICENSE
- file for details.
+### 📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
