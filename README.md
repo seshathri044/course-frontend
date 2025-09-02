@@ -51,13 +51,17 @@ flowchart TD
 ## 📸 Screenshots  
 
 **Landing Page**  
-<img width="1920" height="1080" alt="FE1" src="https://github.com/user-attachments/assets/xxxxxxxx" />  
+
+<img width="1920" height="1080" alt="BE8" src="https://github.com/user-attachments/assets/6cbb6fdc-d571-4909-8a85-a266673782ee" />
 
 **Course List**  
-<img width="1920" height="1080" alt="FE2" src="https://github.com/user-attachments/assets/yyyyyyyy" />  
+<img width="1920" height="1080" alt="BE5" src="https://github.com/user-attachments/assets/1b59eb31-60ac-49ee-afd9-afbb23793129" />
 
 **Registration Form**  
-<img width="1920" height="1080" alt="FE3" src="https://github.com/user-attachments/assets/zzzzzzzz" />  
+<img width="1920" height="1080" alt="BE4" src="https://github.com/user-attachments/assets/540acfa6-862d-441e-b937-9f8908b890e2" />
+
+**Enrolled Students**
+<img width="1920" height="1080" alt="BE6" src="https://github.com/user-attachments/assets/6ef2c8dd-cb81-4fd5-9835-af9a683a46f0" />
 
 ---
 
