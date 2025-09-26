@@ -5,6 +5,10 @@ This frontend connects seamlessly to the backend API (**Spring Boot + MySQL**).
 
 🔗 **Live Demo**: [Course Registration System](https://course-register-system.netlify.app)  
 
+⚠️ **Note:** This project is deployed on free-tier services (Render/Railway/Netlify).  
+Because of the limitations of free plans (cold starts and restricted storage), the demo may take extra time to load or occasionally show errors.  
+Once the backend services start running, the application works as expected.
+
 ---
 
 ## 🚀 Deployment Architecture  
